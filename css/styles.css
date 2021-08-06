@@ -21,7 +21,8 @@ body {
 
 .intro_header .profile-col {
   background-color: #eff0f2;
-  padding: 1.5em 3em; }
+  padding: 1.5em 3em;
+  overflow-y: auto; }
   .intro_header .profile-col .profile-inner {
     position: fixed;
     overflow-y: auto; }

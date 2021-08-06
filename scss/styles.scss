@@ -35,6 +35,8 @@ body{
     .profile-col{
         background-color: #eff0f2;
         padding: 1.5em 3em;
+        // height: 100vh;
+        overflow-y: auto;
         .profile-inner{
             position: fixed;
             overflow-y: auto;

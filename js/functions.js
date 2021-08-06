@@ -8,4 +8,6 @@ $(document).ready(function (){
     $(".phone").click(function(){
         $(".phone-text").html("<a href='tel:469-877-2832'>(469) 877-2832</a>");
     });
+    ScrollReveal().reveal('.info-row');
+    ScrollReveal().reveal('.project');
 });

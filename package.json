@@ -1,0 +1,25 @@
+{
+  "name": "itspieter.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "index.html",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "sass": "^1.37.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsPieter/itsPieter.github.io.git"
+  },
+  "author": "Pieter Tenret",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsPieter/itsPieter.github.io/issues"
+  },
+  "homepage": "https://github.com/itsPieter/itsPieter.github.io#readme"
+}

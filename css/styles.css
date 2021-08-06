@@ -1,0 +1,109 @@
+body {
+  font-family: "Assistant", sans-serif; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    text-transform: uppercase;
+    color: #335384;
+    letter-spacing: 2px; }
+  body h2 {
+    font-size: 1.25rem;
+    font-weight: 600; }
+  body .btn {
+    padding: 0.2em 1em;
+    background-color: #5ba7d1;
+    border-radius: 0;
+    color: #fff;
+    text-transform: uppercase; }
+    body .btn i {
+      margin-right: 5px; }
+    body .btn:hover {
+      background-color: #335384;
+      color: #5ba7d1; }
+
+.intro_header .profile-col {
+  background-color: #eff0f2;
+  padding: 3em 3em; }
+  .intro_header .profile-col .profile-inner {
+    position: fixed; }
+  .intro_header .profile-col .profile-img {
+    width: 200px;
+    border-radius: 100px; }
+  .intro_header .profile-col .about {
+    padding: 1em 3em; }
+  .intro_header .profile-col .contact {
+    padding-top: 2em; }
+    .intro_header .profile-col .contact p {
+      color: #335384; }
+      .intro_header .profile-col .contact p i {
+        width: 20px; }
+
+.intro_header .info-col {
+  padding: 3em 4em; }
+  .intro_header .info-col h1 {
+    font-weight: 800;
+    color: #335384;
+    text-transform: uppercase;
+    letter-spacing: 5px; }
+  .intro_header .info-col .bolding {
+    font-weight: 700;
+    color: #6589bf;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+.intro_header .projects {
+  padding-top: 3em; }
+  .intro_header .projects h3 {
+    font-weight: 700; }
+  .intro_header .projects .project {
+    width: 500px;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #eff0f2; }
+    .intro_header .projects .project .first-line {
+      display: flex;
+      margin-bottom: 10px; }
+      .intro_header .projects .project .first-line a {
+        text-decoration: none; }
+      .intro_header .projects .project .first-line .tech {
+        margin-left: 10px; }
+    .intro_header .projects .project .project-title {
+      font-size: 1.2em;
+      color: #6589bf; }
+    .intro_header .projects .project .tech .tag {
+      font-size: 0.7em;
+      color: #fff;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      border-radius: 3px;
+      margin: 0 2px; }
+    .intro_header .projects .project .tech .gatsby {
+      background-color: #663399; }
+    .intro_header .projects .project .tech .sanity {
+      background-color: #F03E2F; }
+    .intro_header .projects .project .tech .wordpress {
+      background-color: #0073AA; }
+    .intro_header .projects .project .tech .php {
+      background-color: #8892BF; }
+    .intro_header .projects .project .description {
+      padding-top: 1em; }
+    .intro_header .projects .project .screenshot {
+      width: 100%;
+      border: 1px solid #eff0f2;
+      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+      position: relative;
+      transition: all ease 0.2s; }
+      .intro_header .projects .project .screenshot:before {
+        content: '';
+        background-color: rgba(51, 83, 132, 0);
+        transition: all ease 0.2s; }
+      .intro_header .projects .project .screenshot:hover:before {
+        content: '';
+        background-color: rgba(51, 83, 132, 0.4);
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition: all ease 0.2s; }
+      .intro_header .projects .project .screenshot img {
+        width: 100%; }

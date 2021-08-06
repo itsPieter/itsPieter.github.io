@@ -21,20 +21,53 @@ body {
 
 .intro_header .profile-col {
   background-color: #eff0f2;
-  padding: 3em 3em; }
+  padding: 1.5em 3em; }
   .intro_header .profile-col .profile-inner {
-    position: fixed; }
+    position: fixed;
+    overflow-y: auto; }
   .intro_header .profile-col .profile-img {
     width: 200px;
     border-radius: 100px; }
   .intro_header .profile-col .about {
-    padding: 1em 3em; }
+    padding: 0.5em 3em; }
   .intro_header .profile-col .contact {
     padding-top: 2em; }
     .intro_header .profile-col .contact p {
       color: #335384; }
       .intro_header .profile-col .contact p i {
         width: 20px; }
+      .intro_header .profile-col .contact p a {
+        text-decoration: none;
+        color: #335384; }
+  .intro_header .profile-col .skills ul {
+    padding-left: 0; }
+    .intro_header .profile-col .skills ul li {
+      list-style: none;
+      padding-left: 0;
+      color: #335384; }
+      .intro_header .profile-col .skills ul li .competence {
+        width: 70px;
+        margin-right: 10px; }
+        .intro_header .profile-col .skills ul li .competence i {
+          color: #5ba7d1;
+          font-size: 0.7em;
+          margin: 1px; }
+  .intro_header .profile-col .other-skills ul li {
+    color: #335384; }
+  .intro_header .profile-col .other-skills ul .adobe, .intro_header .profile-col .other-skills ul .office {
+    cursor: pointer; }
+  .intro_header .profile-col .other-skills ul .adobe-list, .intro_header .profile-col .other-skills ul .office-list {
+    height: 0;
+    overflow: hidden;
+    transition: all ease 0.2s; }
+  .intro_header .profile-col .other-skills ul .adobe-list.shown, .intro_header .profile-col .other-skills ul .office-list.shown {
+    height: 130px;
+    overflow: visible;
+    transition: all ease 0.2s; }
+  .intro_header .profile-col .other-skills ul .office-list.shown {
+    height: 80px; }
+  .intro_header .profile-col .languages ul li {
+    color: #335384; }
 
 .intro_header .info-col {
   padding: 3em 4em; }
@@ -74,7 +107,11 @@ body {
       padding: 0.5em 1em;
       text-decoration: none;
       border-radius: 3px;
-      margin: 0 2px; }
+      margin: 0 2px;
+      transition: all ease 0.2s; }
+      .intro_header .projects .project .tech .tag:hover {
+        opacity: 0.8;
+        transition: all ease 0.2s; }
     .intro_header .projects .project .tech .gatsby {
       background-color: #663399; }
     .intro_header .projects .project .tech .sanity {
@@ -90,20 +127,41 @@ body {
       border: 1px solid #eff0f2;
       box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
       position: relative;
-      transition: all ease 0.2s; }
+      transition: all ease 0.2s;
+      border-radius: 5px; }
       .intro_header .projects .project .screenshot:before {
         content: '';
         background-color: rgba(51, 83, 132, 0);
+        border-radius: 5px;
         transition: all ease 0.2s; }
-      .intro_header .projects .project .screenshot:hover:before {
-        content: '';
-        background-color: rgba(51, 83, 132, 0.4);
-        display: block;
+      .intro_header .projects .project .screenshot:after {
+        content: '\f360';
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+        font-family: "Font Awesome 5 Free";
+        font-weight: bold;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
         transition: all ease 0.2s; }
+      .intro_header .projects .project .screenshot:hover {
+        transition: all ease 0.2s; }
+        .intro_header .projects .project .screenshot:hover:before {
+          content: '';
+          background-color: rgba(51, 83, 132, 0.4);
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          transition: all ease 0.2s; }
+        .intro_header .projects .project .screenshot:hover:after {
+          opacity: 1;
+          background-color: rgba(91, 168, 209, 0.8);
+          color: #fff;
+          padding: 0.8em 1.1em;
+          border-radius: 55px; }
       .intro_header .projects .project .screenshot img {
-        width: 100%; }
+        width: 100%;
+        border-radius: 5px; }

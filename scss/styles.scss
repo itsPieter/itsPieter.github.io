@@ -85,9 +85,54 @@ body{
                 }
             }
         }
+        .profile-img-wrapper{
+            text-align: center;
+            position: relative;
+            width: 200px;
+            margin: 0 auto;
+            &:before{
+                content: '';
+                background-color: rgba(51,83,132,0);
+                border-radius: 100px;
+                transition: $transition-default;
+            }
+            &:after{
+                content: '\f360';
+                position: absolute;
+                font-family: "Font Awesome 5 Free";
+                font-weight: bold;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(90deg);
+                opacity: 0;
+                transition: $transition-default;
+            }
+            &:hover{
+                &:before{
+                    content:'';
+                    background-color: rgba(51, 83, 132, 0.4);
+                    display: block;
+                    position: absolute;
+                    top:0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    transition: $transition-default;
+                }
+                &:after{
+                    opacity: 1;
+                    background-color: rgba(91, 168, 209, 0.8);
+                    color: #fff;
+                    padding: 0.8em 1.1em;
+                    border-radius: 55px;
+                    transform: translate(-50%, -50%) rotate(0deg);
+                }
+            }
+        }
         .profile-img{
             width: 200px;
             border-radius: 100px;
+            
         }
         .about{
             padding: 0.5em 3em;
@@ -258,13 +303,15 @@ body{
                     font-weight: bold;
                     left: 50%;
                     top: 50%;
-                    transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%) rotate(90deg);
                     opacity: 0;
                     transition: $transition-default;
+                    
                 }
                 &:hover{
                     transition: $transition-default;
-
+                    
+                    
                     &:before{
                         content:'';
                         background-color: rgba(51, 83, 132, 0.4);
@@ -282,6 +329,7 @@ body{
                         color: #fff;
                         padding: 0.8em 1.1em;
                         border-radius: 55px;
+                        transform: translate(-50%, -50%) rotate(0deg);
                     }
                 }
                 img{

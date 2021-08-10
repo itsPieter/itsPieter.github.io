@@ -55,6 +55,43 @@ body {
       @media screen and (max-height: 900px) {
         .intro_header .profile-col .profile-inner .sections-wrap {
           overflow: scroll; } }
+  .intro_header .profile-col .profile-img-wrapper {
+    text-align: center;
+    position: relative;
+    width: 200px;
+    margin: 0 auto; }
+    .intro_header .profile-col .profile-img-wrapper:before {
+      content: '';
+      background-color: rgba(51, 83, 132, 0);
+      border-radius: 100px;
+      transition: all ease 0.2s; }
+    .intro_header .profile-col .profile-img-wrapper:after {
+      content: '\f360';
+      position: absolute;
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(90deg);
+      opacity: 0;
+      transition: all ease 0.2s; }
+    .intro_header .profile-col .profile-img-wrapper:hover:before {
+      content: '';
+      background-color: rgba(51, 83, 132, 0.4);
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transition: all ease 0.2s; }
+    .intro_header .profile-col .profile-img-wrapper:hover:after {
+      opacity: 1;
+      background-color: rgba(91, 168, 209, 0.8);
+      color: #fff;
+      padding: 0.8em 1.1em;
+      border-radius: 55px;
+      transform: translate(-50%, -50%) rotate(0deg); }
   .intro_header .profile-col .profile-img {
     width: 200px;
     border-radius: 100px; }
@@ -180,7 +217,7 @@ body {
         font-weight: bold;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) rotate(90deg);
         opacity: 0;
         transition: all ease 0.2s; }
       .intro_header .projects .project .screenshot:hover {
@@ -200,7 +237,8 @@ body {
           background-color: rgba(91, 168, 209, 0.8);
           color: #fff;
           padding: 0.8em 1.1em;
-          border-radius: 55px; }
+          border-radius: 55px;
+          transform: translate(-50%, -50%) rotate(0deg); }
       .intro_header .projects .project .screenshot img {
         width: 100%;
         border-radius: 5px; }

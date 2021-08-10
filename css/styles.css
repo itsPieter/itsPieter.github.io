@@ -35,7 +35,7 @@ body {
 .intro_header .profile-col {
   background-color: #eff0f2;
   position: relative; }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 600px) {
     .intro_header .profile-col {
       width: 100%; } }
   .intro_header .profile-col .profile-inner {
@@ -48,9 +48,10 @@ body {
     @media screen and (max-width: 800px) {
       .intro_header .profile-col .profile-inner {
         padding: 1.5em 1em; } }
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 600px) {
       .intro_header .profile-col .profile-inner {
-        position: initial; } }
+        position: initial !important;
+        width: 100%; } }
     .intro_header .profile-col .profile-inner .sections-wrap {
       height: 100%; }
       @media screen and (max-height: 900px) {
@@ -264,6 +265,6 @@ body {
   width: 735px; }
   @media screen and (max-width: 768px) {
     .intro_header .site-footer {
-      width: 400px; } }
+      width: 92%; } }
   .intro_header .site-footer p {
     margin-bottom: 0; }

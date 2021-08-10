@@ -58,7 +58,7 @@ body{
         background-color: #eff0f2;
         // height: 100vh;+
         position: relative;
-        @media screen and (max-width: 450px){
+        @media screen and (max-width: 600px){
             width: 100%;
         }
         .profile-inner{
@@ -71,8 +71,9 @@ body{
             @media screen and (max-width: 800px){
                 padding: 1.5em 1em;
             }
-            @media screen and (max-width:450px){
-                position: initial;
+            @media screen and (max-width:600px){
+                position: initial !important;
+                width:100%;
             }
 
             .sections-wrap{
@@ -81,7 +82,7 @@ body{
                     overflow: scroll;
 
                 }
-                @media screen and (max-width: 450px){
+                @media screen and (max-width: 600px){
                     // flex-direction: row !important;
                 }
             }
@@ -367,7 +368,7 @@ body{
         // right: 0;
         width: 735px;
         @media screen and (max-width: 768px){
-            width: 400px;
+            width: 92%;
         }
         p{
             margin-bottom: 0;

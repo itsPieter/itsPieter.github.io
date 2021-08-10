@@ -56,7 +56,8 @@ body{
     
     .profile-col{
         background-color: #eff0f2;
-        // height: 100vh;
+        // height: 100vh;+
+        position: relative;
         @media screen and (max-width: 450px){
             width: 100%;
         }
@@ -202,6 +203,7 @@ body{
                 }
             }
         }
+        
     }
     .info-col{
         padding: 3em 4em;
@@ -232,16 +234,26 @@ body{
             font-weight: 700;
         }
         .project{
-            width: 500px;
+            width: 100%;
             padding-top: 2em;
             padding-bottom: 1em;
             border-bottom: 1px solid #eff0f2;
+            &:last-child{
+                border-bottom: none;
+            }
             @media screen and (max-width: 800px){
                 width: 100%;
             }
             .first-line{
                 display:flex;
                 margin-bottom: 10px;
+                @media screen and (max-width: 800px){
+                    flex-direction: column;
+                    .tech{
+                        margin-left: 0 !important;
+                        margin-bottom: 10px;
+                    }
+                } 
                 a{
                     text-decoration: none;
                 }
@@ -278,6 +290,12 @@ body{
                 }
                 .php{
                     background-color: #8892BF;
+                }
+                .twig{
+                    background-color: #B9CF29;
+                }
+                .scss{
+                    background-color: #CF649A;
                 }
             }
             .description{
@@ -338,6 +356,21 @@ body{
 
                 }
             }
+        }
+    }
+    .site-footer{
+        text-align: center;
+        background-color: #fff;
+        position: fixed;
+        bottom: 0;
+        // left: 0;
+        // right: 0;
+        width: 735px;
+        @media screen and (max-width: 768px){
+            width: 400px;
+        }
+        p{
+            margin-bottom: 0;
         }
     }
 }

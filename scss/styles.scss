@@ -1,7 +1,7 @@
 $main-color: #335384;
 $secondary-color: #6589bf;
 $accent-color: #5ba7d1;
-$transition-default: all ease 0.2s; 
+$transition-default: all ease 0.2s;
 
 body{
     font-family: "Assistant", sans-serif;
@@ -51,20 +51,136 @@ body{
         // background: #000;
     }
 }
-
-.intro_header{
-    
-    .profile-col{
-        background-color: #eff0f2;
-        // height: 100vh;+
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
+    z-index: 999;
+    .inner{
         position: relative;
+    }
+    &.scrolled{
+        background-color: #fff;
+        box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+        .name{
+            h1{
+                color: $main-color;
+            }
+            p{
+                color: $main-color;
+            }
+        }
+        .navigation{
+            nav{
+                ul{
+                    li{
+                        a{
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .name{
+        h1{
+            color: #fff;
+            font-size: 1.2em;
+            text-transform: capitalize;
+            margin-bottom: 5px;
+        }
+        p{
+            color: #fff;
+            font-size: 0.9em;
+        }
+    }
+    .navigation{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        nav{
+            ul{
+                gap: 30px;
+                list-style: none;
+                justify-content: end;
+                li{
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.intro-about{
+    height: 90vh;
+    background: rgb(0,2,36);
+    background: linear-gradient(166deg, rgba(0,2,36,1) 0%, rgba(9,41,121,1) 35%, rgba(0,245,255,1) 100%);
+    &:before{
+        content: '';
+        background-image: url(../images/bg-overlay.webp);
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 90vh;
+    }
+    .container{
+        height: 100%;
+        position: relative;
+        .inner{
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            h2{
+                font-size: 3em;
+                color: #84dfe2;
+            }
+            p{
+                color: #dbdbdb;
+                font-size: 1.4em;
+                .bolding{
+                    font-weight: bold;
+                }
+            }
+            .resume-btn{
+                border-radius: 10px;
+                background: none;
+                border: 1px solid #fff;
+                padding: 10px 30px;
+                &:hover{
+                    background-color: #84dfe2;
+                    border-color: #84dfe2;
+                    color: #092979;
+                }
+            }
+        }
+    }
+}
+.intro-skills{
+        margin-top: 100px;
+        // height: 100vh;
+        position: relative;
+        margin-bottom: 100px;
         @media screen and (max-width: 768px){
             width: 100%;
         }
         .profile-inner{
-            position: fixed;
+            // position: fixed;
             height: 100%;
-            padding: 1.5em 3em;
+            padding: 4em 3em;
+            background-color: #f9f9f9;
+            border-radius: 30px;
+            box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
             @media screen and (max-width: 1100px){
                 padding: 1.5em 0em;
             }
@@ -143,7 +259,7 @@ body{
             }
         }
         .contact{
-            padding-top: 2em;
+            padding-top: 0em;
             p{
                 color: $main-color;
                 i{
@@ -155,66 +271,12 @@ body{
                 }
             }
         }
-        .skills{
-            ul{
-                padding-left: 0;
-                li{
-                    list-style: none;
-                    padding-left: 0;
-                    color: $main-color;
-                    .competence{
-                        width: 70px;
-                        margin-right: 10px;
-                        i{
-                            color: $accent-color;
-                            font-size: 0.7em;
-                            margin: 1px;
-                        }
-                    }
-                }
-            }
-        }
-        .other-skills{
-            ul{
-                li{
-                    color: $main-color;
-                }
-                .adobe, .office{
-                    cursor: pointer;
-                }
-                .adobe-list, .office-list{
-                    height: 0;
-                    overflow: hidden;
-                    transition: $transition-default;
-                }
-                .adobe-list.shown, .office-list.shown{
-                    height: 130px;
-                    overflow: visible;
-                    transition: $transition-default;
-                }
-                .office-list.shown{
-                    height: 80px;
-                }
-            }
-        }
-        .languages{
-            ul{
-                li{
-                    color: $main-color;
-                }
-            }
-        }
-        
     }
-    .info-col{
-        padding: 3em 4em;
-        @media screen and (max-width: 768px){
-            padding: 2em 1em;
-        }
-        .info-row{
 
+.projects{
+        .projects-wrap{
+            gap: 40px;
         }
-
         h1{
             font-weight: 800;
             color: $main-color;
@@ -227,23 +289,13 @@ body{
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-    }
-    .projects{
-        padding-top: 3em;
-        
-        h3{
-            font-weight: 700;
-        }
         .project{
-            width: 100%;
             padding-top: 2em;
             padding-bottom: 1em;
             border-bottom: 1px solid #eff0f2;
+
             &:last-child{
                 border-bottom: none;
-            }
-            @media screen and (max-width: 768px){
-                width: 100%;
             }
             .first-line{
                 display:flex;
@@ -366,7 +418,7 @@ body{
         bottom: 0;
         // left: 0;
         // right: 0;
-        width: 735px;
+        width: 100%;
         @media screen and (max-width: 768px){
             width: 92%;
         }
@@ -374,4 +426,3 @@ body{
             margin-bottom: 0;
         }
     }
-}

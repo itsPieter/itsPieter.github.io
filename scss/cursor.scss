@@ -1,0 +1,23 @@
+.cursor {
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+ 
+    &.cursor--initialized {
+       // if cursor initialized
+    }
+ 
+    &.cursor--off-screen {
+       // if true cursor is outside of the window
+    }
+ 
+    &.cursor--disabled {
+       // if cursor has been disabled
+    }
+ }

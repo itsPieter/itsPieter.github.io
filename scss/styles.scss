@@ -80,6 +80,7 @@ header{
                             color: $main-color;
                         }
                     }
+                   
                 }
             }
         }
@@ -88,9 +89,10 @@ header{
     .name{
         h1{
             color: #fff;
-            font-size: 1.2em;
+            font-size: 1.6em;
             text-transform: capitalize;
             margin-bottom: 5px;
+            font-family: "Unica One", sans-serif;
         }
         p{
             color: #fff;
@@ -107,12 +109,65 @@ header{
                 gap: 30px;
                 list-style: none;
                 justify-content: end;
+                position: relative;
                 li{
+                    position: relative;
+                    &:hover{
+                        &:before{
+                            opacity: 1;
+                            transition: cubic-bezier(0.165, 0.84, 0.44, 1) .2s;
+                            transform: rotate(100deg);
+
+                        }
+                        &:after{
+                            transition: cubic-bezier(0.165, 0.84, 0.44, 1) .3s;
+                            transform: rotate(100deg);
+                            opacity: 1;
+                        }
+                    }
+                    &:before{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        height: 2px;
+                        width: 20px;
+                        background-color: #fff;
+                        transform: rotate(80deg);
+                        left: -20px;
+                        bottom:10px;
+                        opacity: 0;
+                        transition: cubic-bezier(0.165, 0.84, 0.44, 1) .3s;
+                    }
                     a{
                         color: #fff;
                         text-decoration: none;
                     }
+                    &:after{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        height: 2px;
+                        width: 20px;
+                        background-color: #fff;
+                        transform: rotate(80deg);
+                        right: -20px;
+                        bottom: 10px;
+                        opacity: 0;
+                        transition: cubic-bezier(0.165, 0.84, 0.44, 1) .3s;
+
+                    }
                 }
+                // hr{
+                //     display:block;
+                //     height: 2px;
+                //     width: 50px;
+                //     position: absolute;
+                //     left: 25px;
+                //     bottom: -15px;
+                //     border: 0;
+                //     background-color: #fff;
+                //     z-index: 10001;
+                // }
             }
         }
     }
@@ -135,21 +190,42 @@ header{
     .container{
         height: 100%;
         position: relative;
-        .inner{
-            display: flex;
+        .profile-img{
+            width: 100%;
+            border-radius: 20px;
+        }
+        .intro-wrap{
+            // display: flex;
             height: 100%;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            // justify-content: center;
+            // // align-items: center;
+            gap: 40px;
+        }
+        .profile-wrap{
+            // height: 100%;
+        }
+        .inner{
+            // display: flex;
+            // height: 100%;
+            // justify-content: center;
+            // // align-items: center;
+            // flex-direction: column;
+            
             h2{
                 font-size: 3em;
                 color: #84dfe2;
+                font-family: "Unica One", sans-serif;
+                font-weight: 400;
+                text-transform: capitalize;
+
             }
             p{
                 color: #dbdbdb;
                 font-size: 1.4em;
                 .bolding{
                     font-weight: bold;
+                    font-family: "Unica One", sans-serif;
+
                 }
             }
             .resume-btn{
@@ -274,14 +350,19 @@ header{
     }
 
 .projects{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    scroll-margin-top: 10em;
         .projects-wrap{
             gap: 40px;
         }
-        h1{
-            font-weight: 800;
+        h3{
+            font-weight: 400;
             color: $main-color;
-            text-transform: uppercase;
-            letter-spacing: 5px;
+            text-transform: capitalize;
+            // letter-spacing: 5px;
+            font-family: "Unica One", sans-serif;
+
         }
         .bolding{
             font-weight: 700;
@@ -317,6 +398,8 @@ header{
             .project-title{
                 font-size: 1.2em;
                 color: $secondary-color;
+                font-family: "Unica One", sans-serif;
+
             }
             .tech{
                 .tag{

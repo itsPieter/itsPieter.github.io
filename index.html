@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/255bb65afa.js" crossorigin="anonymous"></script>
         <meta name="robots" content="noindex">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,9 +29,10 @@
                 <div class="col-md-8 navigation">
                     <nav>
                         <ul class="d-flex">
-                            <li><a href="#">Skills</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">About Me</a></li>
+                            <!-- <li class="link1"><a href="#">Skills</a></li> -->
+                            <li class="link2"><a href="#projects">Projects</a></li>
+                            <!-- <li class="link3"><a href="#">About Me</a></li> -->
+                            <!-- <hr> -->
                         </ul>
                     </nav>
                 </div>
@@ -39,16 +41,21 @@
     </header>
     <section class="intro-about">
         <div class="container">
-            <div class="inner">
-                <h2 class="col-md-8">Ready to take on the challenge</h2>
-                <p class="col-md-8">I'm <span class="bolding">Pieter Tenret</span>, a Front-End Web Developer with over 5 years of hands-on experience working in agencies. My focus is on staying updated with the latest web technologies, and I'm always eager to expand my skill set through continuous learning. I take pride in translating creative ideas into engaging digital experiences within the ever-evolving landscape of web development.</p>
-                <div class="col-md-8">
-                    <a href="/files/2022 Resume - Pieter Tenret.pdf" target="_blank" class="btn resume-btn"><i class="fas fa-file-alt"></i> View Resume</a>
+            <div class="intro-wrap d-flex">
+                <div class="col-md-4 profile-wrap d-flex align-items-center h-100">
+                    <img class="profile-img" src="../images/profile-img-2.jpg" alt="">
+                </div>
+                <div class="inner col-md-8  d-flex justify-content-center h-100 flex-column">
+                    <h2 class="">Ready to take on the challenge</h2>
+                    <p class="">I'm <span class="bolding">Pieter Tenret</span>, a Front-End Web Developer with over 5 years of hands-on experience working in agencies. My focus is on staying updated with the latest web technologies, and I'm always eager to expand my skill set through continuous learning. I take pride in translating creative ideas into engaging digital experiences within the ever-evolving landscape of web development.</p>
+                    <div class="">
+                        <a href="/files/2023 Resume - Pieter Tenret.pdf" target="_blank" class="btn resume-btn"><i class="fas fa-file-alt"></i> View Resume</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="intro-skills container">
+    <!-- <section class="intro-skills container">
         <div class="profile-inner d-flex">
             <div class="col-md-4">
                 <a href="https://linkedin.com/in/pietertenret/" target="_blank">
@@ -67,8 +74,8 @@
                 </section>
             </div>
         </div>
-    </section>
-    <section class="projects">
+    </section> -->
+    <section class="projects" id="projects">
         <h3 class="container">Projects</h3>
         <div class="container d-flex flex-wrap projects-wrap justify-content-between">
                     

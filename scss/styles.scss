@@ -58,6 +58,9 @@ header{
     backdrop-filter: blur(10px);
     padding: 10px 0;
     z-index: 999;
+    @media screen and (max-width: 768px){
+        padding: 10px 20px;
+    } 
     .inner{
         position: relative;
     }
@@ -203,6 +206,9 @@ header{
         }
         .profile-wrap{
             // height: 100%;
+            @media screen and (max-width: 768px){
+                display:none !important;
+            } 
         }
         .inner{
             // display: flex;
@@ -210,6 +216,9 @@ header{
             // justify-content: center;
             // // align-items: center;
             // flex-direction: column;
+            @media screen and (max-width: 768px){
+                margin: 0 20px;
+            } 
             
             h2{
                 font-size: 3em;
@@ -217,6 +226,9 @@ header{
                 font-family: "Unica One", sans-serif;
                 font-weight: 400;
                 text-transform: capitalize;
+                @media screen and (max-width: 768px){
+                    font-size: 2.6em;
+                } 
 
             }
             p{
@@ -227,6 +239,9 @@ header{
                     font-family: "Unica One", sans-serif;
 
                 }
+                @media screen and (max-width: 768px){
+                    font-size: 1.1em;
+                } 
             }
             .resume-btn{
                 border-radius: 10px;
@@ -353,6 +368,9 @@ header{
     margin-top: 100px;
     margin-bottom: 100px;
     scroll-margin-top: 10em;
+    @media screen and (max-width: 768px){
+        margin: 100px 20px;
+    } 
         .projects-wrap{
             gap: 40px;
         }

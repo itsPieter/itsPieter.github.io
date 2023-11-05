@@ -39,6 +39,9 @@ header {
   backdrop-filter: blur(10px);
   padding: 10px 0;
   z-index: 999; }
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 10px 20px; } }
   header .inner {
     position: relative; }
   header.scrolled {
@@ -129,18 +132,30 @@ header {
     .intro-about .container .intro-wrap {
       height: 100%;
       gap: 40px; }
+    @media screen and (max-width: 768px) {
+      .intro-about .container .profile-wrap {
+        display: none !important; } }
+    @media screen and (max-width: 768px) {
+      .intro-about .container .inner {
+        margin: 0 20px; } }
     .intro-about .container .inner h2 {
       font-size: 3em;
       color: #84dfe2;
       font-family: "Unica One", sans-serif;
       font-weight: 400;
       text-transform: capitalize; }
+      @media screen and (max-width: 768px) {
+        .intro-about .container .inner h2 {
+          font-size: 2.6em; } }
     .intro-about .container .inner p {
       color: #dbdbdb;
       font-size: 1.4em; }
       .intro-about .container .inner p .bolding {
         font-weight: bold;
         font-family: "Unica One", sans-serif; }
+      @media screen and (max-width: 768px) {
+        .intro-about .container .inner p {
+          font-size: 1.1em; } }
     .intro-about .container .inner .resume-btn {
       border-radius: 10px;
       background: none;
@@ -238,6 +253,9 @@ header {
   margin-top: 100px;
   margin-bottom: 100px;
   scroll-margin-top: 10em; }
+  @media screen and (max-width: 768px) {
+    .projects {
+      margin: 100px 20px; } }
   .projects .projects-wrap {
     gap: 40px; }
   .projects h3 {

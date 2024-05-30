@@ -1,3 +1,23 @@
+* {
+  cursor: none; }
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: black;
+  opacity: .3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+  z-index: 9999; }
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: .5; }
+
 body {
   font-family: "Assistant", sans-serif; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
@@ -12,7 +32,8 @@ body {
     background-color: #5ba7d1;
     border-radius: 0;
     color: #fff;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    cursor: none; }
     body .btn i {
       margin-right: 5px; }
     body .btn:hover {
@@ -110,19 +131,7 @@ header {
           transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s; }
 
 .intro-about {
-  height: 90vh;
-  background: #000224;
-  background: linear-gradient(166deg, #000224 0%, #092979 35%, #00f5ff 100%); }
-  .intro-about:before {
-    content: '';
-    background-image: url(../images/bg-overlay.webp);
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 90vh; }
+  height: 90vh; }
   .intro-about .container {
     height: 100%;
     position: relative; }

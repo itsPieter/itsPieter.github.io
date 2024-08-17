@@ -175,6 +175,50 @@ header {
         border-color: #84dfe2;
         color: #092979; }
 
+.skills {
+  padding: 50px 0; }
+  .skills .container .inner h2 {
+    font-family: "Unica One", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400; }
+  .skills .container .inner h3 {
+    font-family: "Unica One", sans-serif;
+    font-size: 1.2rem; }
+  .skills .container .inner ul {
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 20px; }
+    .skills .container .inner ul li {
+      list-style: none;
+      padding: 5px 10px;
+      width: 100px;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-align: center; }
+    .skills .container .inner ul li:first-child {
+      background-color: #5BA7D1; }
+    .skills .container .inner ul li:nth-child(2) {
+      background-color: #579EC9; }
+    .skills .container .inner ul li:nth-child(3) {
+      background-color: #5090BC; }
+    .skills .container .inner ul li:nth-child(4) {
+      background-color: #4B86B3; }
+    .skills .container .inner ul li:nth-child(5) {
+      background-color: #467CA9; }
+    .skills .container .inner ul li:nth-child(6) {
+      background-color: #4172A0; }
+    .skills .container .inner ul li:nth-child(7) {
+      background-color: #3C6796; }
+    .skills .container .inner ul li:nth-child(8) {
+      background-color: #375D8D; }
+    .skills .container .inner ul li:nth-child(9) {
+      background-color: #335384; }
+
 .intro-skills {
   margin-top: 100px;
   position: relative;
@@ -259,7 +303,6 @@ header {
         color: #335384; }
 
 .projects {
-  margin-top: 100px;
   margin-bottom: 100px;
   scroll-margin-top: 10em; }
   @media screen and (max-width: 768px) {
